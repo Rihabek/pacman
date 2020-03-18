@@ -4,3 +4,7 @@
 
 #define H 15
 #define W 30
+
+struct plateau {
+  
+}
