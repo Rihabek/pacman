@@ -1,4 +1,4 @@
-#include "joueur.h"
+#include "../headers/joueur.h"
 
 
 
@@ -7,7 +7,7 @@ joueur_t* joueur = NULL;
 joueur_t*placer_j(int** pl)
 {
   //creation de joueur
-    struct joueur*joueur = malloc(sizeof(joueur*));
+    joueur_t*joueur = malloc(sizeof(joueur_t));
     // placer le joueur aléatoirmenet
     joueur->x=rand() % P_SIZE; //x
     joueur->y=rand() % P_SIZE; //y
@@ -15,14 +15,19 @@ joueur_t*placer_j(int** pl)
 }
 
 void deplacer_j(int** pl, joueur_t *jou)
-//pour deplacer le joueur en utlisant wasd
-const char _right = 'd', _left = 'a', _up = 'w', _down = 's';
-
-int char;
-
-scanf("%s",char);
-
-if (char=='d') //right
 {
-  if jou->col <P
+  //char lettre = 1;// de la merde
+//pour deplacer le joueur en utlisant wasd
+//printf("s : bas , d:droite  ,..... \n");
+return;
 }
+
+
+
+
+// if (lettre =='d') //right
+// {
+//   if jou->col <P
+// }
+//
+// }

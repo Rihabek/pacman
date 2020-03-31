@@ -1,10 +1,9 @@
-#include "joueur.h"
-#include "../headers/parametre"
+#include "../headers/affichage.h"
 
 
 void afficher_brut(int** pl)
 {
-  for (int i=o; i<P_SIZE; i++)
+  for (int i=0; i<P_SIZE; i++)
   {
     for (int j=0; j<P_SIZE+15; j++)
     {

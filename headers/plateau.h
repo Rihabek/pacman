@@ -1,14 +1,10 @@
-#include <stdio.h> // printf()
-#include <stdlib.h>
-#include <stdbool.h>
+#ifndef _PLATEAU_H_
+#define _PLATEAU_H_
+
+#include "parametres.h"
+
+
+
+int** creer_plateau();
 
 #endif
-
-#define H 15
-#define W 30
-
-struct plateau {
-
-}
-
-int ** creer_plateau();
