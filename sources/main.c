@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-  int ** creer_plateau();
+  int ** pl=creer_plateau();
   void mur();
   void afficher();
   void afficher_brut();
