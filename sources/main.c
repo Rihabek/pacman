@@ -10,5 +10,8 @@
 int main(int argc, char const *argv[])
 {
   int ** creer_plateau();
-  void afficher_brut(int** pl);
+  void mur();
+  void afficher();
+  void afficher_brut();
+
 }

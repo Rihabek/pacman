@@ -13,21 +13,27 @@ joueur_t*placer_j(int** pl)
     joueur->y=rand() % P_SIZE; //y
 
 }
-
-void deplacer_j(int** pl, joueur_t *jou)
-{
-  //char lettre = 1;// de la merde
-//pour deplacer le joueur en utlisant wasd
-//printf("s : bas , d:droite  ,..... \n");
-return;
-}
-
-
-
-
-// if (lettre =='d') //right
+//
+// void deplacer_j(int** pl, joueur_t *jou)
 // {
-//   if jou->col <P
+//   char lettre;
+//   //pour deplacer le joueur en utlisant wasd
+//   printf("s : bas , a:gauche  ,d:droite, w:haut\n");
+//   scanf("%s\n",&lettre );
+//
+//   lettre = (lettre =="s" || lettre =="a" || lettre =="d" || lettre =="w");
+//
+//   if (lettre == "d") //droite
+//   {
+//     if (jou->W < P_SIZE - 1)
+//     {
+//
+//     }
+//   }
 // }
+// 
+// void update_j(int** pl, joueur_t* jou)
+// {
+//
 //
 // }

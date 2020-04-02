@@ -6,5 +6,6 @@
 
 
 int** creer_plateau();
+void mur();
 
 #endif
