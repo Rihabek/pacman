@@ -16,6 +16,7 @@ int ** creer_plateau()
   return pl;
 }
 
+
 int valide(int** pl, int i, int j)
 {
   for (i = 0; i <P_SIZE; i++)
@@ -36,8 +37,7 @@ void mur(int**pl)
     for (int j=0; i<P_SIZE+15; j++)// P_SIZE =15 LE H DE PLATEAU
     {
       int nb_aleatoire;
-      nb_aleatoire = rand()%5; // 1/5 pour avoir un mur
-      printf("%d\n", nb_aleatoire);
+      nb_aleatoire = rand()%5 ; // 1/5 pour avoir un mur
       if (nb_aleatoire == 2)
       {
         pl[i][j] = 2; // return un mur

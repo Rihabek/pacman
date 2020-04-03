@@ -15,4 +15,5 @@ int main(int argc, char const *argv[])
   afficher_brut(pl);
   afficher(pl);
 
+
 }
