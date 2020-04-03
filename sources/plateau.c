@@ -21,29 +21,28 @@ int valide(int** pl, int i, int j)
 {
   for (i = 0; i <P_SIZE; i++)
   {
-    for (j = 0; j < P_SIZE+15; j++) {
+    for (j = 0; j < P_SIZE+15; j++)
+    {
       if ((pl[i][j] == 2))
       {
-        return 0;
+        return 1;
       }
     }
+    return 2;
   }
 }
 
-void mur(int**pl, int i, int j)
+void mur(int**pl)
 {
-  for (i=0; i<4; i++)
+  for (int i=0; i<P_SIZE; i++)
   {
-    for (j=0; i<4; j++)
+    for (int j=0; i<P_SIZE+15; j++)// P_SIZE =15 LE H DE PLATEAU
     {
-      int nb_aleatoirex;
-      int nb_aleatoirey;
-      nb_aleatoirex = rand()%4 ; 
-      nb_aleatoirey = rand()%4;
-      if ((nb_aleatoirex == 2) || (nb_aleatoirey ==2))
+      int nb_aleatoire;
+      nb_aleatoire = rand()%5 ; // 1/5 pour avoir un mur
+      if (nb_aleatoire == 2)
       {
-        pl[i][j]=2; // return un mur
-        printf("%d", pl[i][j]);
+        pl[i][j] = 2; // return un mur
       }
     }
   }

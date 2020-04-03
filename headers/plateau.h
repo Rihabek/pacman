@@ -6,7 +6,7 @@
 
 
 int** creer_plateau();
-void mur();
-int valide();
+int valide(int** pl, int i, int j);
+void mur(int**pl);
 
 #endif

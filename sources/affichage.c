@@ -3,13 +3,12 @@
 
 void afficher_brut(int** pl)
 {
-  for (int i=0; i<H; i++)
+  for (int i=0; i<P_SIZE; i++)
   {
-    for (int j=0; j<W; j++)
+    for (int j=0; j<P_SIZE+15; j++)
     {
-      printf(" %d",pl[i][j]);
+      pl[i][j];
     }
-    printf("\n");
   }
 }
 //
@@ -23,7 +22,7 @@ void afficher(int** pl)
       // 0 si la case est vide , 1 si elle contien un pacgomme, 2 un mur, F fantome , J joueur
       if (pl[i][j] == 0)
       {
-        printf("  ");
+        printf(" 1 ");
       }
       else if (pl[i][j] == 1)
       {

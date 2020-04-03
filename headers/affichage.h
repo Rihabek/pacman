@@ -4,8 +4,8 @@
 #include "plateau.h"
 
 
-void afficher_brut();
-void afficher();
+void afficher_brut(int** pl);
+void afficher(int** pl);
 
 
 
