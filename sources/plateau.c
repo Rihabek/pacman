@@ -6,18 +6,19 @@
   *\author belkhadiri rihab
 */
 
+// creation de plateau
+
 int ** creer_plateau()
 {
-  int**pl = malloc(sizeof(*pl) * (P_SIZE+15)); //LIGNE
-  for (int i =0; i<P_SIZE+15; i++)
+  int** pl=malloc(sizeof(int*)*P_SIZE);
+  for (int i = 0; i < P_SIZE; i++)
   {
-    pl[i]=malloc(sizeof(**pl) * P_SIZE);
+    pl[i]=malloc(sizeof(int*)*P_SIZE+15);
   }
   return pl;
 }
-
-
-int valide(int** pl, int i, int j)
+// si la case es vide le joeur peut se deplacer
+int valide(int** pl, int i, int j) // if the case is empty then the player can move
 {
   for (i = 0; i <P_SIZE; i++)
   {
@@ -45,7 +46,7 @@ void mur(int** pl)
       {
         pl[i][j] = 2; // return un mur
       }
-      else if (nb_aleatoire == 1)
+      else if ((nb_aleatoire == 1) || (nb_aleatoire == 3))
       {
         pl[i][j] = 1;// return un pacgomme
       }

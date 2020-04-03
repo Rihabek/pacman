@@ -15,6 +15,8 @@ joueur_t*placer_j(int** pl);
 //
 void deplacer_j(int** pl, joueur_t *jou);
 
+
+
 // update code
 
 #endif

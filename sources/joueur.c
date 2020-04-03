@@ -9,21 +9,22 @@ joueur_t*placer_j(int** pl)
   //creation de joueur
     joueur_t*joueur = malloc(sizeof(joueur_t));
     // placer le joueur aléatoirmenet
-    joueur->x=rand() % P_SIZE+15; //x
-    joueur->y=rand() % P_SIZE; //y
+    joueur->x=rand() % P_SIZE+15 /2; //x
+    joueur->y=rand() % P_SIZE /2; //y
+
 
 }
-//
+// // //
 // void deplacer_j(int** pl, joueur_t *jou)
 // {
-//   char lettre = 'b';
+//   char lettre;
 //   //pour deplacer le joueur en utlisant wasd
 //   printf("s : bas , a:gauche  ,d:droite, w:haut\n");
 //   scanf("%s\n",&lettre );
 //
-//   lettre = (lettre =="s" || lettre =="a" || lettre =="d" || lettre =="w");
+//   lettre = (lettre =='s') || (lettre =='a') || (lettre =='d') || (lettre =='w');
 //
-//   if (lettre = "d") //droite
+//   if (lettre = 'd') //droite
 //   {
 //     if (jou->W < P_SIZE - 1)
 //     {
@@ -33,7 +34,7 @@ joueur_t*placer_j(int** pl)
 //
 //       }
 //     }
-//   }else if(lettre == "a") //gauche
+//   }else if(lettre == 'a') //gauche
 //   {
 //     if (jou->W > 0 )
 //     {
@@ -43,7 +44,7 @@ joueur_t*placer_j(int** pl)
 //
 //       }
 //     }
-//   }else if (lettre == "w") //haut
+//   }else if (lettre == 'w') //haut
 //   {
 //     if (jou->H > 0)
 //     {
@@ -53,7 +54,7 @@ joueur_t*placer_j(int** pl)
 //
 //       }
 //     }
-//   }else if (lettre == "s") //bas
+//   }else if (lettre == 's') //bas
 //   {
 //     if (jou->H < P_SIZE+15 - 1)
 //     {

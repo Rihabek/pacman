@@ -13,6 +13,4 @@ int main()
   mur(pl);
   afficher_brut(pl);
   afficher(pl);
-
-
 }
