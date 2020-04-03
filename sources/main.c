@@ -9,9 +9,10 @@
 
 int main(int argc, char const *argv[])
 {
+  srand(time(NULL));
   int ** pl=creer_plateau();
-  void mur();
-  void afficher();
-  void afficher_brut();
+  // mur(pl);
+  afficher_brut(pl);
+  afficher(pl);
 
 }

@@ -13,7 +13,7 @@ joueur_t*placer_j(int** pl)
     joueur->y=rand() % P_SIZE; //y
 
 }
-
+//
 // void deplacer_j(int** pl, joueur_t *jou)
 // {
 //   char lettre;
@@ -27,9 +27,39 @@ joueur_t*placer_j(int** pl)
 //   {
 //     if (jou->W < P_SIZE - 1)
 //     {
-//       if (valid(pl, jou->H, jou->W +1))
+//       if (valid(pl, jou->H, jou->W +1) == 0)
 //       {
 //         jou->W++
+//
+//       }
+//     }
+//   }else if(lettre == "a") //gauche
+//   {
+//     if (jou->W > 0 )
+//     {
+//       if (valid(pl, jou->H, jou->W -1) == 0)
+//       {
+//         jou->W--
+//
+//       }
+//     }
+//   }else if (lettre == "w") //haut
+//   {
+//     if (jou->H > 0)
+//     {
+//       if (valid(pl, jou->H -1, jou->W ) == 0)
+//       {
+//         jou->H--
+//
+//       }
+//     }
+//   }else if (lettre == "s") //bas
+//   {
+//     if (jou->H < P_SIZE+15 - 1)
+//     {
+//       if (valid(pl, jou->H +1, jou->W ) == 0)
+//       {
+//         jou->H++
 //
 //       }
 //     }

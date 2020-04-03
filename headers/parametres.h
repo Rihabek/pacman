@@ -3,6 +3,8 @@
 
 #include <stdio.h> // printf()
 #include <stdlib.h>
+#include <time.h>
+
 
 #define P_SIZE 15
 #define H 15

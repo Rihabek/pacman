@@ -21,7 +21,7 @@ int valide(int** pl, int i, int j)
   for (i = 0; i <P_SIZE; i++)
   {
     for (j = 0; j < P_SIZE+15; j++) {
-      if ((pl[i][j] == 0) && (!pl[i][j] == 2))
+      if ((pl[i][j] == 2))
       {
         return 0;
       }
@@ -41,7 +41,6 @@ void mur(int**pl)
       {
         pl[i][j] = 2; // return un mur
       }
-      printf("HELLO WORLD \n" );
     }
   }
 }

@@ -7,5 +7,6 @@
 
 int** creer_plateau();
 void mur();
+int valide();
 
 #endif
