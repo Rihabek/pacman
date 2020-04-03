@@ -9,11 +9,11 @@ joueur_t*placer_j(int** pl)
   //creation de joueur
     joueur_t*joueur = malloc(sizeof(joueur_t));
     // placer le joueur aléatoirmenet
-    joueur->x=rand() % P_SIZE; //x
+    joueur->x=rand() % P_SIZE+15; //x
     joueur->y=rand() % P_SIZE; //y
 
 }
-//
+
 // void deplacer_j(int** pl, joueur_t *jou)
 // {
 //   char lettre;
@@ -27,13 +27,17 @@ joueur_t*placer_j(int** pl)
 //   {
 //     if (jou->W < P_SIZE - 1)
 //     {
+//       if (valid(pl, jou->H, jou->W +1))
+//       {
+//         jou->W++
 //
+//       }
 //     }
 //   }
 // }
-// 
-// void update_j(int** pl, joueur_t* jou)
-// {
-//
-//
-// }
+
+void update_j(int** pl, joueur_t* jou)
+{
+
+
+}
