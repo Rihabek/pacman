@@ -16,18 +16,18 @@ joueur_t*placer_j(int** pl)
 //
 // void deplacer_j(int** pl, joueur_t *jou)
 // {
-//   char lettre;
+//   char lettre = 'b';
 //   //pour deplacer le joueur en utlisant wasd
 //   printf("s : bas , a:gauche  ,d:droite, w:haut\n");
 //   scanf("%s\n",&lettre );
 //
 //   lettre = (lettre =="s" || lettre =="a" || lettre =="d" || lettre =="w");
 //
-//   if (lettre == "d") //droite
+//   if (lettre = "d") //droite
 //   {
 //     if (jou->W < P_SIZE - 1)
 //     {
-//       if (valid(pl, jou->H, jou->W +1) == 0)
+//       if (valide(pl, jou->H, jou->W +1) == 0)
 //       {
 //         jou->W++
 //
@@ -37,7 +37,7 @@ joueur_t*placer_j(int** pl)
 //   {
 //     if (jou->W > 0 )
 //     {
-//       if (valid(pl, jou->H, jou->W -1) == 0)
+//       if (valide(pl, jou->H, jou->W -1) == 0)
 //       {
 //         jou->W--
 //
@@ -47,7 +47,7 @@ joueur_t*placer_j(int** pl)
 //   {
 //     if (jou->H > 0)
 //     {
-//       if (valid(pl, jou->H -1, jou->W ) == 0)
+//       if (valide(pl, jou->H -1, jou->W ) == 0)
 //       {
 //         jou->H--
 //
@@ -57,7 +57,7 @@ joueur_t*placer_j(int** pl)
 //   {
 //     if (jou->H < P_SIZE+15 - 1)
 //     {
-//       if (valid(pl, jou->H +1, jou->W ) == 0)
+//       if (valide(pl, jou->H +1, jou->W ) == 0)
 //       {
 //         jou->H++
 //

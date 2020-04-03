@@ -25,18 +25,19 @@ int valide(int** pl, int i, int j)
     {
       if ((pl[i][j] == 2))
       {
-        return 1;
+        return 0;
       }
     }
-    return 2;
+    return 1;
   }
 }
 
-void mur(int**pl)
+
+void mur(int** pl)
 {
   for (int i=0; i<P_SIZE; i++)
   {
-    for (int j=0; i<P_SIZE+15; j++)// P_SIZE =15 LE H DE PLATEAU
+    for (int j=0; j<P_SIZE+15; j++)// P_SIZE =15 LE H DE PLATEAU
     {
       int nb_aleatoire;
       nb_aleatoire = rand()%5 ; // 1/5 pour avoir un mur
@@ -44,9 +45,9 @@ void mur(int**pl)
       {
         pl[i][j] = 2; // return un mur
       }
-      else if (nb_aleatoire == 1) //pacgomme
+      else if (nb_aleatoire == 1)
       {
-        pl[i][j] =1;
+        pl[i][j] = 1;// return un pacgomme
       }
     }
   }
