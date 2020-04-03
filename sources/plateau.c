@@ -37,6 +37,7 @@ void mur(int**pl)
     {
       int nb_aleatoire;
       nb_aleatoire = rand()%5; // 1/5 pour avoir un mur
+      printf("%d\n", nb_aleatoire);
       if (nb_aleatoire == 2)
       {
         pl[i][j] = 2; // return un mur
