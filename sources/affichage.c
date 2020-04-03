@@ -7,8 +7,9 @@ void afficher_brut(int** pl)
   {
     for (int j=0; j<P_SIZE+15; j++)
     {
-      pl[i][j];
+      printf("%d",pl[i][j]);;
     }
+    printf("\n");
   }
 }
 //

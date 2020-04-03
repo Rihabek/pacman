@@ -1,7 +1,7 @@
 #ifndef _JOUEUR_H_
 #define _JOUEUR_H_
 
-#include "../headers/plateau.h"
+#include "plateau.h"
 
 //coordonnes de joueur
 typedef struct joueur {

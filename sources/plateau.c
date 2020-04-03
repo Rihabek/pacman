@@ -44,6 +44,10 @@ void mur(int**pl)
       {
         pl[i][j] = 2; // return un mur
       }
+      else if (nb_aleatoire == 1) //pacgomme
+      {
+        pl[i][j] =1;
+      }
     }
   }
 }
