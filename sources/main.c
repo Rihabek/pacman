@@ -7,7 +7,7 @@
 
 
 
-int main(int argc, char const *argv[])
+int main()
 {
   srand(time(NULL));
   int ** pl=creer_plateau();
