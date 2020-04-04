@@ -1,6 +1,6 @@
 #include "../headers/affichage.h"
 #include "../headers/joueur.h"
-// #include "../headers/fantome.h"
+#include "../headers/fantome.h"
 
 
 
@@ -13,4 +13,11 @@ int main()
   mur(pl);
   afficher_brut(pl);
   afficher(pl);
+  placer_j(pl);
+  // deplacer_j(pl, i, j);
+
+
+  return EXIT_SUCCESS ;
+
+
 }

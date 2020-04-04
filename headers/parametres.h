@@ -6,8 +6,8 @@
 #include <time.h>
 
 #define P_SIZE 15
-#define H 15
-#define W 30
+#define H 15 // height
+#define W 30 //width
 
 
 #endif

@@ -48,5 +48,6 @@ void afficher(int** pl)
       }
     }
     printf(" #\n");
+
   }
 }
