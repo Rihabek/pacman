@@ -6,7 +6,7 @@ void afficher_brut(int** pl)
   for (int i=0; i<P_SIZE; i++)
   {
 
-    for (int j=0; j<P_SIZE+15; j++)
+    for (int j=0; j<P_SIZE; j++)
     {
       printf(" %d", pl[i][j]);
     }
@@ -20,9 +20,8 @@ void afficher(int** pl)
 
   for (int i=0; i<P_SIZE; i++)
   {
-    printf(" #" );
 
-    for (int j=0; j<P_SIZE+15; j++)
+    for (int j=0; j<P_SIZE; j++)
     {
 
       // 0 si la case est vide , 1 si elle contien un pacgomme, 2 un mur, F fantome , J joueur
@@ -47,7 +46,7 @@ void afficher(int** pl)
         printf("J ");
       }
     }
-    printf(" #\n");
+    printf(" \n");
 
   }
 }

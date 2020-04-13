@@ -5,7 +5,10 @@ typedef struct fantome
 {
   int x;
   int y;
+  int z;
 }fantome_t;
+
+const int MAX = 5, MIN = 1;
 
 fantome_t** placer_n_f(int** pl, int n);
 

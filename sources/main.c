@@ -11,11 +11,14 @@ int main()
 {
   int ** pl=creer_plateau();
   mur(pl);
-  afficher_brut(pl);
+  // afficher_brut(pl);
+  joueur_t* jou = placer_j(pl);
   afficher(pl);
-  placer_j(pl);
-  // deplacer_j(pl, i, j);
-
+  while (0<1){
+      deplacer_j(pl,jou);
+      afficher(pl);
+  }
+  afficher(pl);
 
   return EXIT_SUCCESS ;
 
