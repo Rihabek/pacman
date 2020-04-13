@@ -7,7 +7,6 @@
 typedef struct joueur {
   int x;
   int y;
-  char jou_char ;
 }joueur_t;
 
 

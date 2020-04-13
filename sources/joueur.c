@@ -9,8 +9,8 @@ joueur_t* placer_j(int** pl)
   //malloc reserves a block of memory for joueur
   joueur=malloc(sizeof(joueur_t));
 
-  joueur->x= rand()% P_SIZE ; //x
-  joueur->y=rand()% P_SIZE; //y
+  joueur->x = rand()% P_SIZE ; //x
+  joueur->y =rand()% P_SIZE; //y
 
     pl[joueur->x][joueur->y] = 4;
     return joueur;
@@ -24,7 +24,7 @@ void deplacer_j(int** pl, joueur_t *jou)
   char lettre;
   //pour deplacer le joueur en utlisant wasd
   printf("s : bas , a:gauche  ,d:droite, w:haut\n");
-  scanf("%s",&lettre );
+  scanf("%s",&lettre);
 
   lettre = (lettre =='s' || lettre =='a' || lettre =='d' || lettre =='w');
 
@@ -32,8 +32,7 @@ void deplacer_j(int** pl, joueur_t *jou)
   {
     if (jou->x < P_SIZE - 1)
     {
-      printf("hello\n");
-      if (!valide(pl,jou->x +1,jou->y ))
+      if (!valide(pl,jou->x +1,jou->y))
       {
         jou->x++;// width=width+1
       }
@@ -71,11 +70,12 @@ void deplacer_j(int** pl, joueur_t *jou)
   }
   update_j(pl,jou);
 }
+
 //modifier l'emplacement de joueur aprés avois se deplacer
 
 void update_j(int** pl, joueur_t* jou)
 {
-  for (int i=0; i <P_SIZE; i++)
+  for (int i=0; i < P_SIZE; i++)
   {
     for (int j = 0; j < P_SIZE; j++)
     {

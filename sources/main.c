@@ -9,9 +9,12 @@
 
 int main()
 {
+
   int ** pl=creer_plateau();
   mur(pl);
   // afficher_brut(pl);
+  pacgomme(pl);
+
   joueur_t* jou = placer_j(pl);
   afficher(pl);
   while (0<1){

@@ -8,5 +8,7 @@
 int** creer_plateau();
 int valide(int** pl, int i, int j);
 void mur(int** pl);
+void pacgomme(int**pl);
+
 
 #endif

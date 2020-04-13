@@ -50,3 +50,17 @@ void mur(int** pl)
     }
   }
 }
+
+void pacgomme(int**pl)
+{
+  for (int i = 0; i < P_SIZE; i++)
+  {
+    for (int j = 0; j < P_SIZE; j++)
+    {
+      if (pl[i][j] == 0)
+      {
+        pl[i][j] = 1; // return un mur
+      }
+    }
+  }
+}
