@@ -17,7 +17,7 @@ void afficher_brut(int** pl)
 
 void afficher(int** pl)
 {
-
+  system("clear"); 
   for (int i=0; i<P_SIZE; i++)
   {
 

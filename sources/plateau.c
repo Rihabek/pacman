@@ -15,6 +15,8 @@ int ** creer_plateau()
   {
     pl[i]=malloc(sizeof(int*)*P_SIZE);
   }
+  mur(pl);
+  pacgomme(pl);
   return pl;
 }
 // si la case est vide le joueur peut se deplacer
@@ -59,7 +61,7 @@ void pacgomme(int**pl)
     {
       if (pl[i][j] == 0)
       {
-        pl[i][j] = 1; // return un mur
+        pl[i][j] = 1; // return un pacgomme
       }
     }
   }
